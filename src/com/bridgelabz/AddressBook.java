@@ -6,6 +6,8 @@ public class AddressBook {
         System.out.println("Welcome to address book");
         Contact contact = addContact();
         System.out.println(contact);
+        Contact editedContact = editContact(contact);
+        System.out.println(editedContact);
     }
 
         private static Contact addContact() {
@@ -20,13 +22,32 @@ public class AddressBook {
             contact.setCity(scanner.next());
             System.out.println("Enter zip");
             contact.setZip(Integer.parseInt(scanner.next()));
-            System.out.println("enter mobile");
+            System.out.println("Enter mobile");
             contact.setMobile(Integer.parseInt(scanner.next()));
             System.out.println("Enter email number");
             contact.setEmail(scanner.next());
 
             return contact;
         }
+    private static Contact editContact(Contact contact) {
+        System.out.println("Edit first name");
+        contact.setFirstName(scanner.next());
+        System.out.println("Edit last name:");
+        contact.setLastName(scanner.next());
+        System.out.println("Edit address:");
+        contact.setAddress(scanner.next());
+        System.out.println("Edit city");
+        contact.setCity(scanner.next());
+        System.out.println("Edit zip");
+        contact.setZip(Integer.parseInt(scanner.next()));
+        System.out.println("Edit mobile");
+        contact.setMobile(Integer.parseInt(scanner.next()));
+        System.out.println("Edit email number");
+        contact.setEmail(scanner.next());
+
+        return contact;
     }
+}
+
 
 
