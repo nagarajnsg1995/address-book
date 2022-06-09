@@ -10,44 +10,28 @@ public class AddressBook {
         System.out.println(editedContact);
     }
 
-        private static Contact addContact() {
-            Contact contact = new Contact();
-            System.out.println("Enter first name:");
-            contact.setFirstName(scanner.next());
-            System.out.println("Enter last name:");
-            contact.setLastName(scanner.next());
-            System.out.println("Enter address:");
-            contact.setAddress(scanner.next());
-            System.out.println("Enter city");
-            contact.setCity(scanner.next());
-            System.out.println("Enter zip");
-            contact.setZip(Integer.parseInt(scanner.next()));
-            System.out.println("Enter mobile");
-            contact.setMobile(Integer.parseInt(scanner.next()));
-            System.out.println("Enter email number");
-            contact.setEmail(scanner.next());
-
-            return contact;
-        }
+    private static Contact addContact() {
+        Contact contact = new Contact();
+        System.out.println("Enter first name:");
+        contact.setFirstName(scanner.next());
+        System.out.println("Enter last name:");
+        contact.setLastName(scanner.next());
+        System.out.println("Enter address:");
+        contact.setAddress(scanner.next());
+        System.out.println("Enter city");
+        contact.setCity(scanner.next());
+        System.out.println("Enter zip");
+        contact.setZip(Integer.parseInt(scanner.next()));
+        System.out.println("Enter mobile");
+        contact.setMobile(Integer.parseInt(scanner.next()));
+        System.out.println("Enter email number");
+        contact.setEmail(scanner.next());
+        return contact;
+    }
     private static Contact editContact(Contact contact) {
         System.out.println("Edit first name");
         contact.setFirstName(scanner.next());
-        System.out.println("Edit last name:");
-        contact.setLastName(scanner.next());
-        System.out.println("Edit address:");
-        contact.setAddress(scanner.next());
-        System.out.println("Edit city");
-        contact.setCity(scanner.next());
-        System.out.println("Edit zip");
-        contact.setZip(Integer.parseInt(scanner.next()));
-        System.out.println("Edit mobile");
-        contact.setMobile(Integer.parseInt(scanner.next()));
-        System.out.println("Edit email number");
-        contact.setEmail(scanner.next());
 
         return contact;
     }
 }
-
-
-
